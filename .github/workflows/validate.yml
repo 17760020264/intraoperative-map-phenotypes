@@ -13,9 +13,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements-dev.txt
-      - run: python -m pytest tests -q
       - run: python scripts/verify_reference_outputs.py
       - run: python scripts/audit_public_release.py
+      - run: python -m pytest tests -q
       - run: python -m compileall -q app analysis pipeline scripts run_all.py run_phenotype_pipeline.py
 
   r-syntax:
