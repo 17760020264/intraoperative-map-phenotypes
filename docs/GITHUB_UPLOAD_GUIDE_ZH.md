@@ -28,12 +28,12 @@ python scripts\audit_public_release.py
 
 只有最后看到 `PASS` 且测试无报错，才继续上传。
 
-## 二、修改仓库地址占位符
+## 二、确认仓库地址
 
-打开 `CITATION.cff`，把 `REPLACE_WITH_OWNER` 替换成你的 GitHub 用户名。例如用户名为 `1449648578Zyc`，则地址为：
+本研究代码仓库地址为：
 
 ```text
-https://github.com/1449648578Zyc/intraoperative-map-phenotypes
+https://github.com/17760020264/intraoperative-map-phenotypes
 ```
 
 Zenodo DOI 尚未生成时，先保留 Data Sharing Statement 中的 DOI 占位符。

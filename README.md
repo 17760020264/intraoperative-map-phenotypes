@@ -113,6 +113,6 @@ After the final BMI quality-control rule, the primary complete-case adjusted den
 
 ## Versioning and citation
 
-Use GitHub release tag `v1.0.0` for the submitted analysis. Do not overwrite a published release; publish corrections as a new semantic version. Replace the owner and DOI placeholders in `CITATION.cff` only after the GitHub repository and archived release exist.
+Use GitHub release tag `v1.0.0` for the submitted analysis. Do not overwrite a published release; publish corrections as a new semantic version. Add the archived release DOI to the repository metadata after Zenodo creates it.
 
 Code is released under the MIT License. Dataset-specific terms continue to govern the source data.
