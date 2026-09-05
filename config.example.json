@@ -1,0 +1,31 @@
+{
+  "study": {
+    "inspire_version": "1.0"
+  },
+  "software": {
+    "python": "python",
+    "rscript": "Rscript"
+  },
+  "inputs": {
+    "mover_outcome_input": "D:/PATH/TO/MOVER_GT60_FINAL_OUTCOMES.csv",
+    "inspire_outcome_input": "D:/PATH/TO/INSPIRE_1_0_GT60_FINAL_OUTCOMES.csv",
+    "mover_labs_input": "D:/PATH/TO/MOVER/patient_labs.csv",
+    "inspire_labs_input": "D:/PATH/TO/INSPIRE/1.0/labs.csv",
+    "mover_pre_bmi_input": "D:/PATH/TO/MOVER_GT60_FINAL_OUTCOMES.csv",
+    "inspire_pre_bmi_input": "D:/PATH/TO/INSPIRE_1_0_GT60_FINAL_OUTCOMES.csv",
+    "mover_medication_input": "D:/PATH/TO/MOVER_PREOP_ANTIHYPERTENSIVE_EVIDENCE.csv",
+    "inspire_medication_input": "D:/PATH/TO/INSPIRE_1_0_PREOP_ANTIHYPERTENSIVE_FLAGS.csv",
+    "mover_early_feature_input": "D:/PATH/TO/MOVER_EARLY_MAP_FEATURES_15_30_60.csv",
+    "inspire_early_feature_input": "D:/PATH/TO/INSPIRE_1_0_EARLY_MAP_FEATURES_15_30_60.csv",
+    "mover_rcri_recovery_input": ""
+  },
+  "outputs": {
+    "root": "derived/final_analysis"
+  },
+  "optional_stages": {
+    "phenotype_recognition": true,
+    "rcri_recovery_sensitivity": false,
+    "repeated_operation_and_missing_data_sensitivity": true,
+    "figures": true
+  }
+}

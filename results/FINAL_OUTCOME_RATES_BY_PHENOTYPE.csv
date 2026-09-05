@@ -1,0 +1,43 @@
+﻿Center,Outcome,Cluster,Phenotype,Assessed_N,Events,Percent
+MOVER,Major adverse cardiac events,1,Labile Hypotension,1775,91,5.12676056338028
+MOVER,Major adverse cardiac events,2,Stable Hemodynamics,15767,254,1.61095959916281
+MOVER,Major adverse cardiac events,3,Labile Hypertension,3622,70,1.93263390392049
+MOVER,Acute kidney injury,1,Labile Hypotension,1775,389,21.9154929577465
+MOVER,Acute kidney injury,2,Stable Hemodynamics,15767,2178,13.8136614447898
+MOVER,Acute kidney injury,3,Labile Hypertension,3622,635,17.5317504141358
+MOVER,Severe acute liver injury,1,Labile Hypotension,1775,36,2.02816901408451
+MOVER,Severe acute liver injury,2,Stable Hemodynamics,15767,91,0.577154817022896
+MOVER,Severe acute liver injury,3,Labile Hypertension,3622,8,0.220872446162341
+MOVER,Pulmonary complications,1,Labile Hypotension,1775,75,4.22535211267606
+MOVER,Pulmonary complications,2,Stable Hemodynamics,15767,366,2.32130398934483
+MOVER,Pulmonary complications,3,Labile Hypertension,3622,90,2.48481501932634
+MOVER,In-hospital death,1,Labile Hypotension,1775,65,3.66197183098592
+MOVER,In-hospital death,2,Stable Hemodynamics,15767,202,1.2811568465783
+MOVER,In-hospital death,3,Labile Hypertension,3622,31,0.855880728879072
+MOVER,ICU,1,Labile Hypotension,1775,1414,79.6619718309859
+MOVER,ICU,2,Stable Hemodynamics,15767,10782,68.3833322762732
+MOVER,ICU,3,Labile Hypertension,3622,2568,70.9000552181115
+MOVER,Nonroutine_discharge,1,Labile Hypotension,1710,629,36.7836257309942
+MOVER,Nonroutine_discharge,2,Stable Hemodynamics,15564,4200,26.9853508095605
+MOVER,Nonroutine_discharge,3,Labile Hypertension,3591,954,26.5664160401003
+INSPIRE,Major adverse cardiac events,1,Labile Hypotension,6814,276,4.05048429703552
+INSPIRE,Major adverse cardiac events,2,Stable Hemodynamics,62418,608,0.974077990323304
+INSPIRE,Major adverse cardiac events,3,Labile Hypertension,15832,96,0.606366851945427
+INSPIRE,Acute kidney injury,1,Labile Hypotension,6814,723,10.6105077781039
+INSPIRE,Acute kidney injury,2,Stable Hemodynamics,62418,2692,4.31285847031305
+INSPIRE,Acute kidney injury,3,Labile Hypertension,15832,601,3.79610914603335
+INSPIRE,Severe acute liver injury,1,Labile Hypotension,6814,289,4.24126797769299
+INSPIRE,Severe acute liver injury,2,Stable Hemodynamics,62418,881,1.41145182479413
+INSPIRE,Severe acute liver injury,3,Labile Hypertension,15832,71,0.448458817584639
+INSPIRE,Pulmonary complications,1,Labile Hypotension,6814,199,2.92045788083358
+INSPIRE,Pulmonary complications,2,Stable Hemodynamics,62418,521,0.834695119997437
+INSPIRE,Pulmonary complications,3,Labile Hypertension,15832,50,0.315816068721577
+INSPIRE,In-hospital death,1,Labile Hypotension,6814,175,2.5682418550044
+INSPIRE,In-hospital death,2,Stable Hemodynamics,62418,305,0.488641097119421
+INSPIRE,In-hospital death,3,Labile Hypertension,15832,28,0.176856998484083
+INSPIRE,ICU,1,Labile Hypotension,6814,916,13.4429116524802
+INSPIRE,ICU,2,Stable Hemodynamics,62418,6110,9.7888429619661
+INSPIRE,ICU,3,Labile Hypertension,15832,593,3.7455785750379
+INSPIRE,Nonroutine_discharge,1,Labile Hypotension,0,0,
+INSPIRE,Nonroutine_discharge,2,Stable Hemodynamics,0,0,
+INSPIRE,Nonroutine_discharge,3,Labile Hypertension,0,0,

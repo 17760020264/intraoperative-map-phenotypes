@@ -1,0 +1,21 @@
+﻿Order,Feature,Domain,Transformation,Development_median,Development_IQR,PCA_center
+1,baseline_map,BP level,identity,97,22,0.0155602996512087
+2,mean_map,BP level,identity,82.054875605,12.18045924,0.0843791085847928
+3,min_map,BP level,identity,59,14,-0.0904230904230904
+4,max_map,BP level,identity,121,34,0.169212147153324
+5,time_weighted_avg_map,BP level,identity,81.949789915,12.214800605,0.0802666181781514
+6,delta_map,BP level,identity,-13.859810025,19.15082232,-0.0208797649949677
+7,max_decrease,BP level,"log1p(max(x,0))",3.66356164612965,0.655406852577098,-0.184535013030142
+8,arv,BP variability,"log1p(max(x,0))",1.97737445622995,0.47854244849567,0.0426941804735674
+9,map_sd,BP variability,"log1p(max(x,0))",2.57979169612573,0.425276843082028,-0.04779321965154
+10,map_cv,BP variability,"log1p(max(x,0))",2.75419977076128,0.390739050241901,-0.0470765522860067
+11,map_range,BP variability,"log1p(max(x,0))",4.12713438504509,0.637266722165489,0.0289352714564966
+12,measurement_rate_per_min,BP variability,"log1p(max(x,0))",0.296265816143172,0.426855801141365,0.254755896517708
+13,fraction_time_below_65,Hypotension burden,"log1p(max(x,0))",0.0392207131532813,0.105360515657826,0.320151318085088
+14,fraction_time_below_55,Hypotension burden,"log1p(max(x,0))",0,0.0104453233393977,1.11459834064307
+15,aut_65_per_min,Hypotension burden,"log1p(max(x,0))",0.154150679827258,0.46363232495257,0.311655997755365
+16,episodes_below_65_per_hour,Hypotension burden,"log1p(max(x,0))",0.519875459285909,0.988331163663521,0.0889812367235099
+17,fraction_time_above_120,Hypertension burden,"log1p(max(x,0))",0,0.0275499517682306,0.862311947217145
+18,fraction_time_above_140,Hypertension burden,"log1p(max(x,0))",0,1,0.00468515406886843
+19,aat_120_per_min,Hypertension burden,"log1p(max(x,0))",0,0.278020161540044,0.724827654895907
+20,episodes_above_120_per_hour,Hypertension burden,"log1p(max(x,0))",0.121483994549527,0.470590401231344,0.324336060526429

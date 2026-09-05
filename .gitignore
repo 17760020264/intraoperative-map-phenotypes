@@ -1,0 +1,44 @@
+# Restricted or patient-level data
+data/
+raw_data/
+private_data/
+derived/
+work/
+outputs/
+*.parquet
+*.feather
+*.fst
+*.rds
+*.RData
+
+# Local configuration and secrets
+config.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*token*
+*secret*
+credentials*
+
+# Logs, caches, and editor files
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.Rhistory
+.Rproj.user/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary Office files
+~$*.docx
+~$*.xlsx
+~$*.pptx

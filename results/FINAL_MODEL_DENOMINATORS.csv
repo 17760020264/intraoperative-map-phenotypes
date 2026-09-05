@@ -1,0 +1,31 @@
+﻿Center,Outcome,Model,Analysis_N,Events,Labile_Hypotension_N,Stable_Hemodynamics_N,Labile_Hypertension_N
+MOVER,Major adverse cardiac events,Unadjusted,21164,415,1775,15767,3622
+MOVER,Major adverse cardiac events,Preoperatively adjusted (primary),13724,327,1305,10209,2210
+MOVER,Major adverse cardiac events,Expanded preoperative complete-case sensitivity,10364,292,1047,7593,1724
+MOVER,Acute kidney injury,Unadjusted,21164,3202,1775,15767,3622
+MOVER,Acute kidney injury,Preoperatively adjusted (primary),13724,2485,1305,10209,2210
+MOVER,Acute kidney injury,Expanded preoperative complete-case sensitivity,10364,2100,1047,7593,1724
+MOVER,Severe acute liver injury,Unadjusted,21164,135,1775,15767,3622
+MOVER,Severe acute liver injury,Preoperatively adjusted (primary),13724,129,1305,10209,2210
+MOVER,Severe acute liver injury,Expanded preoperative complete-case sensitivity,10364,129,1047,7593,1724
+MOVER,Pulmonary complications,Unadjusted,21164,531,1775,15767,3622
+MOVER,Pulmonary complications,Preoperatively adjusted (primary),13724,469,1305,10209,2210
+MOVER,Pulmonary complications,Expanded preoperative complete-case sensitivity,10364,400,1047,7593,1724
+MOVER,In-hospital death,Unadjusted,21164,298,1775,15767,3622
+MOVER,In-hospital death,Preoperatively adjusted (primary),13724,277,1305,10209,2210
+MOVER,In-hospital death,Expanded preoperative complete-case sensitivity,10364,252,1047,7593,1724
+INSPIRE,Major adverse cardiac events,Unadjusted,85064,980,6814,62418,15832
+INSPIRE,Major adverse cardiac events,Preoperatively adjusted (primary),83437,936,6645,61282,15510
+INSPIRE,Major adverse cardiac events,Expanded preoperative complete-case sensitivity,77438,929,6220,56850,14368
+INSPIRE,Acute kidney injury,Unadjusted,85064,4016,6814,62418,15832
+INSPIRE,Acute kidney injury,Preoperatively adjusted (primary),83437,3915,6645,61282,15510
+INSPIRE,Acute kidney injury,Expanded preoperative complete-case sensitivity,77438,3827,6220,56850,14368
+INSPIRE,Severe acute liver injury,Unadjusted,85064,1241,6814,62418,15832
+INSPIRE,Severe acute liver injury,Preoperatively adjusted (primary),83437,1208,6645,61282,15510
+INSPIRE,Severe acute liver injury,Expanded preoperative complete-case sensitivity,77438,1208,6220,56850,14368
+INSPIRE,Pulmonary complications,Unadjusted,85064,770,6814,62418,15832
+INSPIRE,Pulmonary complications,Preoperatively adjusted (primary),83437,726,6645,61282,15510
+INSPIRE,Pulmonary complications,Expanded preoperative complete-case sensitivity,77438,724,6220,56850,14368
+INSPIRE,In-hospital death,Unadjusted,85064,508,6814,62418,15832
+INSPIRE,In-hospital death,Preoperatively adjusted (primary),83437,473,6645,61282,15510
+INSPIRE,In-hospital death,Expanded preoperative complete-case sensitivity,77438,471,6220,56850,14368

@@ -1,0 +1,11 @@
+{
+  "analysis_date": "2026-09-03",
+  "inspire_version": "1.0",
+  "inspire_doi": "10.13026/jyzb-ez61",
+  "primary_adjustment": "RCRI, Age, Male, BMI, ASA, Surgical_type, Hypertension, ACEI_ARB, Beta_blocker, CCB, Diuretic",
+  "frailty_sensitivity": "RCRI, Age, Male, BMI, ASA, Surgical_type, Hypertension, ACEI_ARB, Beta_blocker, CCB, Diuretic, Frailty",
+  "medication_definition": "Recorded administration from hospital admission through operating-room entry in both cohorts",
+  "pulmonary_endpoint": "Enhanced union of strict postoperative laboratory proxy and structured complication (MOVER) or postoperative ICD-10 (INSPIRE)",
+  "MOVER_N": 21164,
+  "INSPIRE_N": 85064
+}

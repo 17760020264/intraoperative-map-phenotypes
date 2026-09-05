@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Frozen 20-feature intraoperative MAP phenotype classifier" />
+  <title>术中血流动力学表型分类器</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">INTRAOPERATIVE MAP · RESEARCH TOOL</p>
+      <h1>术中血流动力学<br><span>表型分类器</span></h1>
+      <p class="lead">从分钟级MAP轨迹计算冻结的20项特征，经稳健缩放、5个主成分与K-means中心距离，识别三种血流动力学表型。</p>
+      <div class="phenotype-key">
+        <span><i class="dot hypo"></i>Labile Hypotension</span>
+        <span><i class="dot stable"></i>Stable Hemodynamics</span>
+        <span><i class="dot hyper"></i>Labile Hypertension</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="mini-grid" id="miniGrid"></div>
+      <div class="method-chip">20 features</div>
+      <div class="method-arrow">→</div>
+      <div class="method-chip">5 PCs</div>
+      <div class="method-arrow">→</div>
+      <div class="method-chip">K = 3</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="workspace">
+      <div class="section-heading">
+        <div><p class="kicker">01 · INPUT</p><h2>输入术中MAP轨迹</h2></div>
+        <p>正式分析优先上传原始数据；粘贴与手绘适合快速测试和教学。</p>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="upload">上传文件</button>
+        <button class="tab" data-tab="paste">粘贴数据</button>
+        <button class="tab" data-tab="draw">手绘曲线</button>
+      </div>
+
+      <div class="panel active" id="uploadPanel">
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept=".csv,.xlsx,.xls" />
+          <div class="upload-icon">↥</div>
+          <h3>拖入CSV或Excel文件</h3>
+          <p>需要时间列与MAP列；支持 TIME、RECORDED_TIME、MEAS_VALUE、平均动脉压等常见名称。</p>
+          <button class="secondary" id="chooseFile">选择文件</button>
+          <span id="fileName"></span>
+        </div>
+        <div class="input-actions"><button class="primary" id="analyzeFile">分析上传数据 <b>→</b></button></div>
+      </div>
+
+      <div class="panel" id="pastePanel">
+        <label for="pasteData">每行输入“时间, MAP”，也可直接粘贴两列表格</label>
+        <textarea id="pasteData" spellcheck="false">0,92
+5,88
+10,80
+15,72
+20,64
+25,58
+30,62
+35,70
+40,78
+50,84
+60,88
+70,92</textarea>
+        <div class="input-actions"><button class="ghost" id="loadExample">载入示例</button><button class="primary" id="analyzePaste">分析粘贴数据 <b>→</b></button></div>
+      </div>
+
+      <div class="panel" id="drawPanel">
+        <div class="draw-toolbar">
+          <label>手术时长 <input id="drawDuration" type="number" min="30" max="600" value="120" /> 分钟</label>
+          <span>按住鼠标或触控笔从左至右绘制</span>
+          <button class="ghost small" id="clearCanvas">清空</button>
+        </div>
+        <div class="canvas-wrap"><canvas id="mapCanvas" width="1100" height="430" aria-label="手绘MAP曲线画布"></canvas></div>
+        <div class="input-actions"><button class="primary" id="analyzeDraw">分析手绘曲线 <b>→</b></button></div>
+      </div>
+    </section>
+
+    <section class="results hidden" id="results">
+      <div class="section-heading">
+        <div><p class="kicker">02 · RESULT</p><h2>分类结果</h2></div>
+        <button class="ghost" id="printResult">打印 / 保存PDF</button>
+      </div>
+      <div id="warningBox"></div>
+      <div class="result-grid">
+        <article class="classification-card" id="classificationCard">
+          <p class="overline">PREDICTED PHENOTYPE</p>
+          <h3 id="phenotypeName">—</h3>
+          <div class="confidence"><span id="confidenceLabel">—</span><small>分类边界可信度</small></div>
+          <div id="similarityBars" class="similarity-bars"></div>
+          <p class="fineprint">匹配度由到三个冻结聚类中心的距离转换，不是临床结局概率。</p>
+        </article>
+        <article class="trace-card">
+          <div class="card-title"><h3>MAP轨迹</h3><span id="traceAudit"></span></div>
+          <canvas id="resultCanvas" width="900" height="410"></canvas>
+        </article>
+      </div>
+
+      <div class="metrics-grid" id="metricsGrid"></div>
+
+      <div class="two-column">
+        <article class="table-card">
+          <div class="card-title"><h3>两个中心的观察结局发生率</h3><span>组水平参考值</span></div>
+          <div id="riskTables"></div>
+          <p class="disclaimer">这些数值是同一表型患者的观察发生率，不是当前个体的预测风险，也不能解释为治疗效应。两个中心的数据来源和捕获方式不同，应分别阅读。</p>
+        </article>
+        <article class="table-card">
+          <div class="card-title"><h3>20项冻结特征</h3><span>可展开核查</span></div>
+          <details><summary>查看全部特征与标准化值</summary><div class="feature-table-wrap"><table id="featureTable"></table></div></details>
+          <div class="method-note">
+            <h4>模型路径</h4>
+            <p>原始MAP → 20项临床互补特征 → 指定变换 → 开发队列中位数/IQR缩放 → PCA前5个主成分 → 最近K-means中心。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <p class="kicker">03 · INTERPRETATION</p>
+      <h2>研究用途与边界</h2>
+      <div class="about-grid">
+        <div><b>✓</b><h3>可复现</h3><p>模型参数固定，上传相同轨迹将得到相同结果。</p></div>
+        <div><b>✓</b><h3>可解释</h3><p>同时返回原始血压摘要、20项特征和中心距离。</p></div>
+        <div><b>!</b><h3>非医疗器械</h3><p>当前仅用于研究、教学和方法复现，不直接指导治疗。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="loading hidden" id="loading"><div class="spinner"></div><p>正在计算20项特征并匹配表型…</p></div>
+  <footer><span>Hemodynamic Phenotype Research Tool</span><span>Frozen 20-feature PCA / K-means classifier</span></footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or frozen classifier, please cite the associated article and this software release."
+title: "Intraoperative MAP Phenotype Analysis and Frozen Classifier"
+type: software
+version: 1.0.0
+date-released: 2026-09-03
+authors:
+  - family-names: Zhu
+    given-names: Yingchao
+  - family-names: Cui
+    given-names: Quexuan
+  - family-names: Zhang
+    given-names: Yuelun
+  - family-names: Xu
+    given-names: Li
+  - family-names: Che
+    given-names: Lu
+license: MIT
+repository-code: "https://github.com/REPLACE_WITH_OWNER/intraoperative-map-phenotypes"
+url: "https://huggingface.co/spaces/1449648578Zyc/intraoperative-map-phenotype"

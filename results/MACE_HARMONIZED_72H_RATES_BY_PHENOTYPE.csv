@@ -1,0 +1,7 @@
+﻿Center,Cluster,Phenotype,Cohort_N,Events,Lab_evaluable_N,Lab_proxy_events,Documented_events,Percent
+MOVER,1,Labile Hypotension,1775,91,130,80,13,5.126760563380282
+MOVER,2,Stable Hemodynamics,15767,254,578,215,46,1.6109595991628083
+MOVER,3,Labile Hypertension,3622,70,150,64,8,1.9326339039204858
+INSPIRE,1,Labile Hypotension,6814,276,532,242,52,4.050484297035515
+INSPIRE,2,Stable Hemodynamics,62418,608,1441,475,153,0.9740779903233042
+INSPIRE,3,Labile Hypertension,15832,96,283,67,30,0.6063668519454269

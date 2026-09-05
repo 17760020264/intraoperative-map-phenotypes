@@ -1,0 +1,12 @@
+Center,Outcome,Analysis,Comparison,Analysis_N,Events,Unique_patients,OR,CI_low,CI_high,P_value,OR_95CI
+MOVER,Major adverse cardiac events,Multiple imputation (20 datasets),Labile Hypotension vs Stable Hemodynamics,21164,415,14919,2.31042119331175,1.78755377319936,2.98622965671689,1.61495322863306e-10,2.31 (1.79-2.99)
+MOVER,Major adverse cardiac events,Multiple imputation (20 datasets),Labile Hypertension vs Stable Hemodynamics,21164,415,14919,1.03106394228611,0.78281910837851,1.3580313021288,0.827673983284374,1.03 (0.78-1.36)
+MOVER,Acute kidney injury,Multiple imputation (20 datasets),Labile Hypotension vs Stable Hemodynamics,21164,3202,14919,1.32714097340487,1.15837132118095,1.52049962830086,4.54707786258191e-05,1.33 (1.16-1.52)
+MOVER,Acute kidney injury,Multiple imputation (20 datasets),Labile Hypertension vs Stable Hemodynamics,21164,3202,14919,1.03246817904691,0.926453351766798,1.15061437115159,0.563223175250457,1.03 (0.93-1.15)
+MOVER,Severe acute liver injury,Multiple imputation (20 datasets),Labile Hypotension vs Stable Hemodynamics,21164,135,14919,2.38204940761638,1.59547026069236,3.55641814211142,2.19757652630794e-05,2.38 (1.60-3.56)
+MOVER,Severe acute liver injury,Multiple imputation (20 datasets),Labile Hypertension vs Stable Hemodynamics,21164,135,14919,0.337204406932317,0.162601489256157,0.699297482297012,0.00348982390842885,0.34 (0.16-0.70)
+MOVER,Pulmonary complications,Multiple imputation (20 datasets),Labile Hypotension vs Stable Hemodynamics,21164,531,14919,1.31030424197689,1.0051324944137,1.70813023764008,0.0457379392925695,1.31 (1.01-1.71)
+MOVER,Pulmonary complications,Multiple imputation (20 datasets),Labile Hypertension vs Stable Hemodynamics,21164,531,14919,0.939122459015625,0.736270034461559,1.19786348995248,0.612929321619756,0.94 (0.74-1.20)
+MOVER,In-hospital death,Multiple imputation (20 datasets),Labile Hypotension vs Stable Hemodynamics,21164,298,14919,1.78599917288535,1.32669653813578,2.4043124813074,0.000131717749156547,1.79 (1.33-2.40)
+MOVER,In-hospital death,Multiple imputation (20 datasets),Labile Hypertension vs Stable Hemodynamics,21164,298,14919,0.590753206426312,0.400753574504349,0.870832783798868,0.00785097533514131,0.59 (0.40-0.87)
+

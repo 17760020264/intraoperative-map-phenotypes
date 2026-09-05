@@ -1,0 +1,25 @@
+﻿Center,Scenario,N,Phenotype,AUC,Sensitivity,Specificity,Events
+MOVER 10-fold cross-validation,Preoperative model,21164,Labile Hypotension,0.644796127323537,0,1,1775
+MOVER 10-fold cross-validation,Preoperative model,21164,Stable Hemodynamics,0.660260994074364,0.997843597386947,0.00722623679822123,15767
+MOVER 10-fold cross-validation,Preoperative model,21164,Labile Hypertension,0.677236956775066,0.00883489784649365,0.997662752251739,3622
+INSPIRE frozen external validation,Preoperative model,85064,Labile Hypotension,0.59010947579265,0,1,6814
+INSPIRE frozen external validation,Preoperative model,85064,Stable Hemodynamics,0.580637951014517,0.999679579608446,0.000353263269451559,62418
+INSPIRE frozen external validation,Preoperative model,85064,Labile Hypertension,0.589654346575021,0.000442142496210207,0.999696672059163,15832
+MOVER 10-fold cross-validation,Preoperative + first 15 min MAP,20989,Labile Hypotension,0.792142113576356,0.229405034324943,0.988721999896055,1748
+MOVER 10-fold cross-validation,Preoperative + first 15 min MAP,20989,Stable Hemodynamics,0.805648103451438,0.950389975706431,0.39517486440995,15642
+MOVER 10-fold cross-validation,Preoperative + first 15 min MAP,20989,Labile Hypertension,0.859085385835724,0.445123645457071,0.961529614721104,3599
+INSPIRE frozen external validation,Preoperative + first 15 min MAP,83695,Labile Hypotension,0.789376979005567,0.341488885573624,0.9683213840399,6703
+INSPIRE frozen external validation,Preoperative + first 15 min MAP,83695,Stable Hemodynamics,0.751133498107653,0.917143182965968,0.37378988884905,61383
+INSPIRE frozen external validation,Preoperative + first 15 min MAP,83695,Labile Hypertension,0.804315075441882,0.349926324556346,0.952471873806656,15609
+MOVER 10-fold cross-validation,Preoperative + first 30 min MAP,21164,Labile Hypotension,0.86683510833426,0.376901408450704,0.984836763113105,1775
+MOVER 10-fold cross-validation,Preoperative + first 30 min MAP,21164,Stable Hemodynamics,0.848873720967556,0.947041288767679,0.497683898462109,15767
+MOVER 10-fold cross-validation,Preoperative + first 30 min MAP,21164,Labile Hypertension,0.885987127777455,0.523467697404749,0.962261999771976,3622
+INSPIRE frozen external validation,Preoperative + first 30 min MAP,85064,Labile Hypotension,0.869393638918558,0.55239213384209,0.952523961661342,6814
+INSPIRE frozen external validation,Preoperative + first 30 min MAP,85064,Stable Hemodynamics,0.798187021778827,0.897177096350412,0.492228208072066,62418
+INSPIRE frozen external validation,Preoperative + first 30 min MAP,85064,Labile Hypertension,0.835933629391982,0.426414855987873,0.951828634157615,15832
+MOVER 10-fold cross-validation,Preoperative + first 60 min MAP,21164,Labile Hypotension,0.92973695699391,0.51887323943662,0.982876888957657,1775
+MOVER 10-fold cross-validation,Preoperative + first 60 min MAP,21164,Stable Hemodynamics,0.901434686159913,0.944948309760893,0.611821382249398,15767
+MOVER 10-fold cross-validation,Preoperative + first 60 min MAP,21164,Labile Hypertension,0.926693282497332,0.62644947542794,0.963060084368943,3622
+INSPIRE frozen external validation,Preoperative + first 60 min MAP,85064,Labile Hypotension,0.92585134158109,0.698855297916055,0.943565495207668,6814
+INSPIRE frozen external validation,Preoperative + first 60 min MAP,85064,Stable Hemodynamics,0.852995948842614,0.894245249767695,0.598560452176985,62418
+INSPIRE frozen external validation,Preoperative + first 60 min MAP,85064,Labile Hypertension,0.879689409712835,0.516169782718545,0.959469609429166,15832

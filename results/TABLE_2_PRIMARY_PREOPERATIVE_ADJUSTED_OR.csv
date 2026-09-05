@@ -1,0 +1,21 @@
+﻿Center,Outcome,Comparison,Analysis_N_Unadjusted,Events_Unadjusted,Unadjusted_OR_95CI,Unadjusted_P,Analysis_N_Adjusted,Events_Adjusted,Adjusted_OR_95CI,Adjusted_P
+MOVER,Major adverse cardiac events,Labile Hypotension vs Stable Hemodynamics,21164,415,3.30 (2.58-4.22),<0.001,13724,327,2.14 (1.61-2.86),<0.001
+MOVER,Major adverse cardiac events,Labile Hypertension vs Stable Hemodynamics,21164,415,1.20 (0.92-1.57),0.174,13724,327,0.93 (0.67-1.29),0.676
+MOVER,Acute kidney injury,Labile Hypotension vs Stable Hemodynamics,21164,3202,1.75 (1.55-1.98),<0.001,13724,2485,1.22 (1.05-1.42),0.010
+MOVER,Acute kidney injury,Labile Hypertension vs Stable Hemodynamics,21164,3202,1.33 (1.20-1.46),<0.001,13724,2485,0.97 (0.85-1.10),0.625
+MOVER,Severe acute liver injury,Labile Hypotension vs Stable Hemodynamics,21164,135,3.57 (2.42-5.26),<0.001,13724,129,2.16 (1.43-3.27),<0.001
+MOVER,Severe acute liver injury,Labile Hypertension vs Stable Hemodynamics,21164,135,0.38 (0.18-0.79),0.009,13724,129,0.35 (0.17-0.73),0.005
+MOVER,Pulmonary complications,Labile Hypotension vs Stable Hemodynamics,21164,531,1.86 (1.44-2.39),<0.001,13724,469,1.25 (0.94-1.65),0.123
+MOVER,Pulmonary complications,Labile Hypertension vs Stable Hemodynamics,21164,531,1.07 (0.85-1.35),0.558,13724,469,0.90 (0.69-1.17),0.430
+MOVER,In-hospital death,Labile Hypotension vs Stable Hemodynamics,21164,298,2.93 (2.20-3.89),<0.001,13724,277,1.64 (1.20-2.24),0.002
+MOVER,In-hospital death,Labile Hypertension vs Stable Hemodynamics,21164,298,0.67 (0.45-0.97),0.035,13724,277,0.61 (0.41-0.92),0.018
+INSPIRE,Major adverse cardiac events,Labile Hypotension vs Stable Hemodynamics,85064,980,4.29 (3.71-4.96),<0.001,83437,936,2.61 (2.23-3.06),<0.001
+INSPIRE,Major adverse cardiac events,Labile Hypertension vs Stable Hemodynamics,85064,980,0.62 (0.50-0.77),<0.001,83437,936,0.63 (0.50-0.80),<0.001
+INSPIRE,Acute kidney injury,Labile Hypotension vs Stable Hemodynamics,85064,4016,2.63 (2.42-2.87),<0.001,83437,3915,2.06 (1.86-2.27),<0.001
+INSPIRE,Acute kidney injury,Labile Hypertension vs Stable Hemodynamics,85064,4016,0.88 (0.80-0.96),0.004,83437,3915,0.86 (0.78-0.94),0.002
+INSPIRE,Severe acute liver injury,Labile Hypotension vs Stable Hemodynamics,85064,1241,3.09 (2.70-3.54),<0.001,83437,1208,2.40 (2.06-2.79),<0.001
+INSPIRE,Severe acute liver injury,Labile Hypertension vs Stable Hemodynamics,85064,1241,0.31 (0.25-0.40),<0.001,83437,1208,0.29 (0.22-0.37),<0.001
+INSPIRE,Pulmonary complications,Labile Hypotension vs Stable Hemodynamics,85064,770,3.57 (3.03-4.22),<0.001,83437,726,2.05 (1.70-2.47),<0.001
+INSPIRE,Pulmonary complications,Labile Hypertension vs Stable Hemodynamics,85064,770,0.38 (0.28-0.50),<0.001,83437,726,0.43 (0.32-0.59),<0.001
+INSPIRE,In-hospital death,Labile Hypotension vs Stable Hemodynamics,85064,508,5.37 (4.45-6.48),<0.001,83437,473,2.93 (2.38-3.61),<0.001
+INSPIRE,In-hospital death,Labile Hypertension vs Stable Hemodynamics,85064,508,0.36 (0.24-0.53),<0.001,83437,473,0.45 (0.31-0.67),<0.001

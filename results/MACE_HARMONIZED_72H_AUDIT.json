@@ -1,0 +1,51 @@
+{
+  "inspire_version": "1.0",
+  "definition": {
+    "preoperative_baseline": "last same-analyte troponin within 30 days before OR entry",
+    "postoperative_window": "OR exit through 72 hours or hospital discharge, whichever occurred first",
+    "with_baseline": "postoperative peak > assay URL and postoperative peak - baseline >= 1 postoperative assay URL",
+    "without_baseline": "at least 2 postoperative same-analyte measurements, peak > URL, and maximum-minimum >= 1 peak assay URL",
+    "MOVER_URL": "row-specific cTnI upper reference limit after ng/L unit harmonization",
+    "INSPIRE_URL": "cTnI 0.04 micrograms/L (40 ng/L); cTnT 0.014 micrograms/L (14 ng/L)",
+    "final_MACE": "laboratory-defined acute myocardial injury proxy OR documented MI, cardiac arrest, or stroke",
+    "interpretation": "laboratory proxy; not adjudicated MINS or PMI"
+  },
+  "MOVER": {
+    "lab_rows_read": 29079344,
+    "eligible_troponin_rows": 16047
+  },
+  "INSPIRE": {
+    "lab_rows_read": 21367131,
+    "eligible_troponin_rows": 33024
+  },
+  "source_counts": [
+    {
+      "Center": "MOVER",
+      "Cohort_N": 21164,
+      "Laboratory_evaluable_N": 858,
+      "Laboratory_evaluable_percent": 4.054054054054054,
+      "Laboratory_proxy_events": 359,
+      "Documented_events": 67,
+      "Laboratory_documented_overlap": 11,
+      "Final_harmonized_MACE_events": 415,
+      "Final_harmonized_MACE_percent": 1.960876960876961,
+      "Previous_MACE_events": 1184,
+      "Previous_MACE_percent": 5.594405594405594,
+      "Absolute_event_change": -769
+    },
+    {
+      "Center": "INSPIRE",
+      "Cohort_N": 85064,
+      "Laboratory_evaluable_N": 2256,
+      "Laboratory_evaluable_percent": 2.652120756136556,
+      "Laboratory_proxy_events": 784,
+      "Documented_events": 235,
+      "Laboratory_documented_overlap": 39,
+      "Final_harmonized_MACE_events": 980,
+      "Final_harmonized_MACE_percent": 1.1520737327188941,
+      "Previous_MACE_events": 1871,
+      "Previous_MACE_percent": 2.1995203611398475,
+      "Absolute_event_change": -891
+    }
+  ]
+}
